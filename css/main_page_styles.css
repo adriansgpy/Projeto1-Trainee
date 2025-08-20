@@ -46,6 +46,10 @@ h3 { font-size: 28px; margin-bottom: 0.8em; }
     transform: translateY(-100px);
 }
 
+.navbar-container #port-title{
+    font-size: 30px;
+}
+
 @keyframes slideDown { to { transform: translateY(0); } }
 
 nav { display: flex; justify-content: space-between; width: 100%; align-items: center; }
