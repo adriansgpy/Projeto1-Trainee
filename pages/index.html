@@ -4,13 +4,295 @@
     <link rel="stylesheet" type="text/css" href="../css/main_page_styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-	<title>Portifólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Portifólio</title>
 </head>
 <body class="body">
-	<main>
 
-		
+    <header>
+    <div class="navbar-container">
+        <nav>
+            <a href="#"><img class="logo" src="w.jpg" alt=""></a>
 
-	</main>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="navbar-items">
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#experience">Minhas Experiências</a></li>
+                <li><a href="#projects">Projetos Já Feitos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-banner">
+        <h1>Adrian Antônio de Souza Gomes</h1>
+        <p>@Trainee 6.0 IA - Wise Intelligence</p>
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div class="about-container">
+                <img src="../imgs/adr.jpg" alt="Foto de Adrian Antônio" class="about-photo">
+                <div class="about-text">
+                    <p>Entusiasta de tecnologia e programação, apaixonado por aprender novas linguagens, frameworks e construir soluções criativas para problemas reais.</p>
+                    <p>Tenho experiência em desenvolvimento web, mobile e bancos de dados. Atualmente participo do programa <strong>Wise Trainee 6.0</strong> e estou cursando Sistemas de Informações na PUC-PR, atualmente, no quarto período.</p>
+                    <p>Gosto de praticar atividades físicas em meu tempo livre, pesquisar e assistir vídeos sobre novas tecnologias com intuito de estar sempre atualizado com as novas tendencias para trazê-las em cenários reais.</p>
+                    <p>Comecei a estudar programação aos 15 anos, iniciando com Python, onde aprendi os fundamentos da lógica de programação. Com o tempo, passei a estudar Java e Kotlin, focando no desenvolvimento de aplicativos mobile. Mais recentemente, tenho explorado Inteligência Artificial e desenvolvimento web, buscando integrar essas áreas para criar soluções cada vez mais completas e inovadoras.</p>
+                    <p>Busco constantemente expandir meus conhecimentos e resolver novos desafios. Estou sempre aberto a aprender, colaborar em equipes para aplicar minhas habilidades em soluções inovadoras que unem tecnologia e impacto real no ambiente de trabalho.</p>
+
+                
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+    <h2>Minhas Experiências</h2>
+
+  
+    <div class="experience-group">
+        <h3>Linguagens</h3>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="../imgs/Languages/htmlcss.jpg" alt="Ícone HTML5 e CSS3">
+                <h4>HTML5 + CSS3</h4>
+                <p>Experiência em criar páginas web, semântica e boas práticas de estilização com CSS.</p>
+            </div>
+            
+            <div class="experience-card">
+                <img src="../imgs/Languages/java.png" alt="Ícone Javascript">
+                <h4>Java</h4>
+                <p>Experiência em criação de aplicativos para plataforma Android e manipulação de dados com SQLite.</p>
+            </div>
+
+            <div class="experience-card">
+                <img src="../imgs/Languages/py.png" alt="Ícone Python">
+                <h4>Python</h4>
+                <p>Automação simples de tarefas repetitivas que seguem  padrões, análise de dados e desenvolvimento de projetos pessoais com Tkinter.</p>
+            </div>
+
+            <div class="experience-card">
+                <img src="../imgs/Languages/kotlin.png" alt="Ícone Kotlin">
+                <h4>Kotlin</h4>
+                <p>Desenvolvimento Android nativo com xml e Jetpack Compose juntamente com integração com Firebase, SQLite .</p>
+            </div>
+            <div class="experience-card">
+                <img src="../imgs/Languages/dart_icon.png" alt="Ícone Kotlin">
+                <h4>Dart</h4>
+                <p>Experiência básica para criação de aplicativos juntamente com o FLutter.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="experience-group">
+        <h3>Bancos de Dados</h3>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="../imgs/Database/firebase.png" alt="Ícone Firebase">
+                <h4>Firebase</h4>
+                <p>Auth de usuários, realtime database real para guardar e trocar informações e firestore para armazenamento complexo em projetos mobile.</p>
+            </div>
+
+            <div class="experience-card">
+                <img src="../imgs/Database/sqlite.png" alt="Ícone SQLite">
+                <h4>SQLite</h4>
+                <p>Armazenamento local simples em apps Android para persistência de dados do usuário.</p>
+            </div>
+            
+            <div class="experience-card">
+                <img src="../imgs/Database/mysql.png" alt="Ícone MySQL">
+                <h4>MySQL</h4>
+                <p>Modelagem de banco, queries e integração com aplicações web via API em Python(FastAPI).</p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="experience-group">
+        <h3>IDE e Ferramentas</h3>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="../imgs/IDEs/vs.png" alt="Ícone VS Code">
+                <h4>Visual Studio Code</h4>
+                <p>Uso no dia a dia para desenvolvimento web e integração com Git.</p>
+            </div>
+
+            <div class="experience-card">
+                <img src="../imgs/IDEs/as.png" alt="Ícone Android Studio">
+                <h4>Android Studio</h4>
+                <p>Experiência no desenvolvimento mobile nativo com Kotlin e Java.</p>
+            </div>
+
+            <div class="experience-card">
+                <img src="../imgs/IDEs/pycharm.png" alt="Ícone PyCharm">
+                <h4>PyCharm</h4>
+                <p>Utilizado em projetos Python para automação e análise de dados.</p>
+            </div>
+            <div class="experience-card">
+                <img src="../imgs/IDEs/intellij.png" alt="Ícone PyCharm">
+                <h4>intellij</h4>
+                <p>Utilizado em projetos Java para criação de programas desktop com Swing.</p>
+            </div>
+            <div class="experience-card">
+                <img src="../imgs/IDEs/inso.jpg" alt="Ícone Insomnia">
+                <h4>Insomnia</h4>
+                <p>Utilizado para testar caminhos e respostas de APIs em projetos.</p>
+            </div>
+            <div class="experience-card">
+                <img src="../imgs/IDEs/gimp_ic.png" alt="Ícone Insomnia">
+                <h4>Gimp</h4>
+                <p>Uso para manipualção de imagens e criação de ícons/backgrounds para meus projetos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="soft-skills">
+        <h2>Soft Skills e Aspectos Pessoais</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h4>Comunicação</h4>
+                <p>Procuro sempre me expressar de forma clara e objetiva, garantindo que minhas ideias e instruções sejam facilmente compreendidas pela equipe e pelos colegas de trabalho.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Trabalho em equipe</h4>
+                <p>Colaboro ativamente com os colegas, compartilho responsabilidades e estou sempre disposto a ajudar, buscando um ambiente produtivo e harmônico.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Resolução de problemas</h4>
+                <p>Encaro desafios com análise e criatividade, buscando soluções eficientes e aprendendo com cada obstáculo para melhorar resultados futuros.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Adaptabilidade</h4>
+                <p>Sou flexível diante de mudanças e novas situações, ajustando minhas estratégias e aprendendo rapidamente para me manter produtivo e eficiente.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Liderança</h4>
+                <p>Procuro motivar e orientar meus colegas quando necessário, tomando decisões responsáveis e promovendo um ambiente colaborativo e organizado.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Descontração</h4>
+                <p>Sempre tento trazer um bom humor para o ambiente de trabalho com o objetivo de deixar tudo mais leve e fácil de lidar.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Motivação</h4>
+                <p>Ajudar colegas de equipe é mais do que meu dever para mim, estou sempre a disposição para motivar minha equipe em qualquer setor em que existe necessidade, sem exceção.</p>
+            </div>
+            <div class="skill-item">
+                <h4>Bom Ouvinte</h4>
+                <p>Escuto atentamente as ideias, opiniões e feedbacks das pessoas, garantindo que compreendo bem os pontos de vista antes de responder ou tomar decisões. Isso ajuda na colaboração e na resolução de problemas em equipe.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+        <section id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="projects-container">
+            
+            <div class="project-card">
+                <img src="../imgs/Projects/escalas.png" alt="Logo Projeto 1" class="project-logo">
+                <div class="project-info">
+                    <h3>Escalas de Trabalho</h3>
+                    <p><p>O <strong>Escalas de Trabalho</strong> foi desenvolvido com o objetivo de facilitar a vida de quem deseja acompanhar seus dias de folga. Com ele, basta selecionar sua escala de trabalho para visualizar rapidamente os próximos dias livres em qualquer período.</p></p>
+                    <a href="https://github.com/adriansgpy/Escalas-de-Trabalho.git" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../imgs/Projects/babershop.png" alt="Logo Projeto 2" class="project-logo">
+                <div class="project-info">
+                    <h3>Barber Shop Line</h3>
+                    <p>Este projeto foi desenvolvido com o objetivo de otimizar o atendimento em barbearias, tornando o processo de espera mais ágil e organizado tanto para os barbeiros(as) quanto para seus clientes. Com o aplicativo, os usuários podem entrar na fila de espera de forma simples e prática, garantindo mais comodidade e eficiência no serviço.</p>                    <a href="#">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../imgs/tb.png" alt="Logo Projeto 2" class="project-logo">
+                <div class="project-info">
+                    <h3>Tabuada</h3>
+                    <p>
+                            Um jogo simples e dinâmico para treinar a tabuada do 2 ao 10 de forma divertida.  
+    Convide seus amigos, desafie-os em diferentes modos de jogo e acumule pontos para alcançar o topo do ranking.  
+    Aprender matemática nunca foi tão competitivo e empolgante!
+
+                    </p>                    <a href="https://github.com/adriansgpy" >Ver no GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="../imgs/tb.png" alt="Logo Projeto 2" class="project-logo">
+                <div class="project-info">
+                    <h3>Viação Pernambucana</h3>
+                    <p>
+                           Criado dentro de um serviço Freelancer para ajudar motoristas da Viação Pernambucana Transporte e Turismo Ltda a criar seus itinerarios e se organizar nas viagens.
+
+                    </p>                    <a href="https://github.com/adriansgpy" >Ver no GitHub</a>
+                </div>
+            </div>
+             <div class="project-card">
+                <img src="../imgs/tb.png" alt="Logo Projeto 2" class="project-logo">
+                <div class="project-info">
+                    <h3>Turbomais</h3>
+                    <p>
+                           Também criado em um serviço Freelancer, o projeto foi construido a fim de ajudar a controlar o almoxarifado, na área de logística, da empresa de internet Turbomais. 
+
+                    </p>                    <a href="https://github.com/adriansgpy" >Ver no GitHub</a>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+       
+
+        <section id="contact">
+    <h2>Contato</h2>
+    <p>Envie um email diretamente para mim:</p>
+    
+    <form class="contact-form" action="mailto:adrianprogramador2020.email@exemplo.com" method="post" enctype="text/plain">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+
+        <div class="form-contact-icons">
+            <a href="https://github.com/adriansgpy" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/5541984683170" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adrian-ant%C3%B4nio-de-souza-gomes-47b287275/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </form>
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Adrian Antônio de Souza Gomes</p>
+    </footer>
+
 </body>
 </html>
