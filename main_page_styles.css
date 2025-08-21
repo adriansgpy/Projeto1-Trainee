@@ -119,6 +119,8 @@ nav { display: flex; justify-content: space-between; width: 100%; align-items: c
 }
 
 
+
+
 .main-banner {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('imgs/banner.jpg');
     background-size: cover;
@@ -220,6 +222,7 @@ main { padding: 2rem 1rem; max-width: 1200px; margin: auto; padding-top: 120px; 
     display: flex;
     align-items: flex-start;
     gap: 15px;
+    flex-basis: 300px;
     background-color: #1e1e1e;
     border-radius: 16px;
     padding: 20px;
@@ -333,9 +336,6 @@ section:nth-child(3) { animation-delay: 0.4s; }
 section:nth-child(4) { animation-delay: 0.6s; }
 section:nth-child(5) { animation-delay: 0.8s; }
 
-
-
-
 @keyframes fadeInUp {
     to { opacity: 1; transform: translateY(0); }
 }
@@ -420,6 +420,208 @@ section:nth-child(5) { animation-delay: 0.8s; }
     color: #121212;
     transform: scale(1.1);
     box-shadow: 0 6px 16px rgba(255,102,0,0.5);
+}
+
+
+/* ================== RESPONSIVO ================== */
+
+/* -------- DESKTOP PEQUENO 1024px -------- */
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar-container {
+        padding: 0 1.5em;
+        height: 75px;
+    }
+    #port-title {
+        font-size: 26px;
+    }
+
+    /* Banner */
+    .main-banner h1 {
+        font-size: 42px;
+    }
+    .main-banner h3 {
+        font-size: 22px;
+    }
+
+    /* About */
+    .about-container {
+        gap: 20px;
+    }
+    .about-photo {
+        width: 250px;
+        height: auto;
+    }
+
+    /* Experiências / Projetos / Skills */
+    .experience-container,
+    .skills-container,
+    .projects-container {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.85rem;
+    }
+}
+
+/* -------- TABLET 768px -------- */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar-container {
+        padding: 0 1em;
+        height: 70px;
+    }
+    #port-title {
+        font-size: 24px;
+    }
+    .menu-icon {
+        right: 1em;
+        top: 22px;
+    }
+
+    /* Banner */
+    .main-banner {
+        padding: 8em 1em 6em;
+    }
+    .main-banner h1 {
+        font-size: 36px;
+    }
+    .main-banner h3 {
+        font-size: 20px;
+    }
+
+    /* About */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-photo {
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+
+    /* Grids */
+    .experience-container,
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Cards */
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* -------- CELULAR 480px -------- */
+@media(max-width: 480px) {
+
+    /* Navbar */
+    .navbar-container {
+        padding: 0 1em;
+        height: 65px;
+    }
+    #port-title {
+        font-size: 22px;
+    }
+    .menu-icon {
+        right: 1em;
+        top: 20px;
+    }
+    .navbar-items li {
+        margin: 10px 0;
+    }
+
+    /* Banner Principal */
+    .main-banner {
+        padding: 6em 1em 5em;
+        background-position: center top;
+    }
+    .main-banner h1 {
+        font-size: 28px;
+    }
+    .main-banner h3 {
+        font-size: 16px;
+    }
+    .main-banner p {
+        font-size: 14px;
+    }
+
+    /* Sobre Mim */
+    .about-container {
+        padding: 15px;
+        gap: 15px;
+    }
+    .about-photo {
+        width: 80%;
+        height: auto;
+    }
+    .about-text {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Cards */
+    .experience-card,
+    .skill-item,
+    .project-card {
+        padding: 15px;
+    }
+    .experience-card img,
+    .project-logo {
+        width: 60px;
+        height: 60px;
+    }
+    .skill-item h4 {
+        font-size: 1.1rem;
+    }
+    .skill-item p,
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .project-info a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    /* Formulário de Contato */
+    .contact-form {
+        padding: 15px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+    .contact-form button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+    .form-contact-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem 0.5rem;
+    }
 }
 
 
