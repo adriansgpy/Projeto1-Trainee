@@ -2,6 +2,9 @@
 html { scroll-behavior: smooth; }
 
 
+h1, h2, h3, p {
+  text-align: center;
+}
 
 
 body, textarea {
@@ -59,6 +62,8 @@ nav { display: flex; justify-content: space-between; width: 100%; align-items: c
 .navbar-items {
     list-style: none;
     display: flex;
+     flex-wrap: nowrap; 
+  white-space: nowrap;
     margin: 0;
     padding: 0;
 }
@@ -423,12 +428,10 @@ section:nth-child(5) { animation-delay: 0.8s; }
 }
 
 
-/* ================== RESPONSIVO ================== */
 
-/* -------- DESKTOP PEQUENO 1024px -------- */
 @media (max-width: 1024px) {
 
-    /* Navbar */
+  
     .navbar-container {
         padding: 0 1.5em;
         height: 75px;
@@ -437,7 +440,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         font-size: 26px;
     }
 
-    /* Banner */
+   
     .main-banner h1 {
         font-size: 42px;
     }
@@ -445,7 +448,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         font-size: 22px;
     }
 
-    /* About */
+ 
     .about-container {
         gap: 20px;
     }
@@ -454,7 +457,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         height: auto;
     }
 
-    /* Experiências / Projetos / Skills */
+    
     .experience-container,
     .skills-container,
     .projects-container {
@@ -462,16 +465,28 @@ section:nth-child(5) { animation-delay: 0.8s; }
 
     }
 
-    /* Footer */
+    
     footer {
         font-size: 0.85rem;
     }
 }
 
-/* -------- TABLET 768px -------- */
+
 @media (max-width: 768px) {
 
-    /* Navbar */
+     h1 {
+        font-size: 48px; 
+        text-align: center;
+    }
+  h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+   
     .navbar-container {
         padding: 0 1em;
         height: 70px;
@@ -484,7 +499,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         top: 22px;
     }
 
-    /* Banner */
+    
     .main-banner {
         padding: 8em 1em 6em;
     }
@@ -495,7 +510,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         font-size: 20px;
     }
 
-    /* About */
+ 
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -506,7 +521,6 @@ section:nth-child(5) { animation-delay: 0.8s; }
         margin: auto;
     }
 
-    /* Grids */
     .experience-container,
     .skills-container,
     .projects-container {
@@ -514,14 +528,14 @@ section:nth-child(5) { animation-delay: 0.8s; }
         gap: 20px;
     }
 
-    /* Cards */
+    
     .project-card {
         flex-direction: column;
         text-align: center;
     }
 }
 
-/* -------- CELULAR 480px -------- */
+
 @media(max-width: 480px) {
 
     /* Navbar */
@@ -540,7 +554,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         margin: 10px 0;
     }
 
-    /* Banner Principal */
+
     .main-banner {
         padding: 6em 1em 5em;
         background-position: center top;
@@ -555,7 +569,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         font-size: 14px;
     }
 
-    /* Sobre Mim */
+    
     .about-container {
         padding: 15px;
         gap: 15px;
@@ -569,7 +583,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         font-size: 16px;
     }
 
-    /* Cards */
+   
     .experience-card,
     .skill-item,
     .project-card {
@@ -598,7 +612,7 @@ section:nth-child(5) { animation-delay: 0.8s; }
         padding: 6px 12px;
     }
 
-    /* Formulário de Contato */
+    
     .contact-form {
         padding: 15px;
     }
@@ -617,11 +631,29 @@ section:nth-child(5) { animation-delay: 0.8s; }
         font-size: 1.2rem;
     }
 
-    /* Footer */
+
     footer {
         font-size: 0.8rem;
         padding: 1rem 0.5rem;
     }
 }
+
+@media (max-width: 977px) {
+  .navbar-items {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+  .navbar-items li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar-items li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
 
 
